@@ -38,4 +38,4 @@
 </section>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.main_layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Jubaer\portfolio-main\resources\views/books/index.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.main_layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Jubaer\portfolio\resources\views/books/index.blade.php ENDPATH**/ ?>

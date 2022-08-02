@@ -15,7 +15,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::all();
-        return view('projects.index',compact('projects'));
+        return view('books.index',compact('projects'));
     }
 
 
@@ -25,7 +25,7 @@ class ProjectController extends Controller
             abort(404,'Page Not Found');
         }
         $project = Project::where('id','=',request('id'))->take(1)->get()[0];
-        return view('projects.show',compact('project'));
+        return view('books.show',compact('project'));
     }
 
     public function landing(){

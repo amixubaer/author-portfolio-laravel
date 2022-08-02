@@ -178,6 +178,11 @@ p, section, article, div{
 .download-button > *{
     color: var(--light-blue-color);
 }
+
+.copyright{
+    text-align: center;
+}
+
 @media only screen and (max-width: 900px){
 
 .cool-overlay-right-aligned{

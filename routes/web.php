@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ProjectController::class, 'landing']);
 
-Route::get('/projects/index',[ProjectController::class, 'index'])->name('projects.index');
+Route::get('/books/index',[ProjectController::class, 'index'])->name('books.index');
 
-Route::get('/projects/show',[ProjectController::class, 'show'])->name('projects.show');
+Route::get('/books/show',[ProjectController::class, 'show'])->name('books.show');
+
+Route::get('/blogs/index',[BlogController::class, 'index'])->name('blogs.index');
+
+Route::get('/blogs/show',[BlogController::class, 'show'])->name('blogs.show');

@@ -20,7 +20,8 @@
 
     <nav class=" flex flex-row justify-content-space-around align-items-center">
         <a href="/" class="{{Request::is('/')?'current':''}} text-link">Home</a>
-        <a href="/projects/index" class="{{Request::is('projects/index')?'current-page':''}} text-link">Books</a>
+        <a href="/books/index" class="{{Request::is('books/index')?'current-page':''}} text-link">Books</a>
+       <a href='/blogs/index' class="{{Request::is('/blogs/index')?'current-':''}} text-link">Blogs</a>
     </nav>
 
 
@@ -30,10 +31,11 @@
     <div class="footer flex flex-row justify-content-space-between">
         <nav class=" flex flex-row justify-content-space-around align-center">
             <a href="/" class="{{Request::is('/')?'current':''}} text-link">Home</a>
-            <a href="/projects/index" class="{{Request::is('projects/index')?'current-page':''}} text-link">Books</a>
-
+            <a href="/books/index" class="{{Request::is('books/index')?'current-page':''}} text-link">Books</a>
+            <a href='/blogs/index' class="{{Request::is('/blogs/index')?'current-':''}} text-link">Blogs</a>
         </nav>
             <a href="/"><div class="logo">J.K. Rowling</div></a>
         </div>
+    <div class="copyright"> © All Rights Reserved by Author | 2022</div>
 </body>
 </html>

@@ -31,7 +31,7 @@
         <div class="projects__cards">
             <div class="projects__cards__container">
                 <?php $__empty_1 = true; $__currentLoopData = $projects; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                <a href="<?php echo e(route('projects.show',['id'=>$project->id])); ?>">
+                <a href="<?php echo e(route('books.show',['id'=>$project->id])); ?>">
                     <div class="projects__card flex flex-column align-items-flex-start justify-content-flex-start">
                         <img src="<?php echo e($project->image_url); ?>" class="cool-box-shadow" />
                         <h3><?php echo e($project->title); ?></h3>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="projects-cta__container flex flex-row justify-content-center align-items-center">
-            <a href="projects/index" class="projects-cta see-more">See all</a>
+            <a href="books/index" class="projects-cta see-more">See all</a>
         </div>
     </div>
 </section>

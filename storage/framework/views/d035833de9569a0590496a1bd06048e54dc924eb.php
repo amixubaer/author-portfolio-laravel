@@ -20,7 +20,7 @@
 
     <nav class=" flex flex-row justify-content-space-around align-items-center">
         <a href="/" class="<?php echo e(Request::is('/')?'current':''); ?> text-link">Home</a>
-        <a href="/projects/index" class="<?php echo e(Request::is('projects/index')?'current-page':''); ?> text-link">Books</a>
+        <a href="/books/index" class="<?php echo e(Request::is('books/index')?'current-page':''); ?> text-link">Books</a>
     </nav>
 
 
@@ -30,7 +30,7 @@
     <div class="footer flex flex-row justify-content-space-between">
         <nav class=" flex flex-row justify-content-space-around align-center">
             <a href="/" class="<?php echo e(Request::is('/')?'current':''); ?> text-link">Home</a>
-            <a href="/projects/index" class="<?php echo e(Request::is('projects/index')?'current-page':''); ?> text-link">Books</a>
+            <a href="/books/index" class="<?php echo e(Request::is('books/index')?'current-page':''); ?> text-link">Books</a>
 
         </nav>
             <a href="/"><div class="logo">J.K. Rowling</div></a>
