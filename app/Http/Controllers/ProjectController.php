@@ -16,6 +16,7 @@ class ProjectController extends Controller
     {
         $projects = Project::all();
         return view('books.index',compact('projects'));
+
     }
 
 

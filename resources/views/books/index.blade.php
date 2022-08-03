@@ -5,6 +5,7 @@
     <div class=" overlay cool-overlay-full-width"></div>
     <div class="projects__container flex flex-column align-items-stretch justify-content-space-around">
         <div class="projects__header">
+
             <div class="heading__container flex flex-column align-items-flex-start justify-content-flex-start">
                 <h1 class="section__heading">All Books</h1>
             </div>
