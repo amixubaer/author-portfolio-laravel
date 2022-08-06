@@ -1,6 +1,36 @@
-@extends('layouts.main_layout')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css" type="text/css">
+    <link rel="stylesheet" href="/css/state.css" type="text/css">
+    <link rel="stylesheet" href="/css/layout.css" type="text/css">
+    <link rel="stylesheet" href="/css/theme.css" type="text/css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-@section('content')
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Rowling</title>
+</head>
+<body>
+<div class="header flex flex-row justify-content-space-between">
+    <a href="/"><div class="logo">J.K. Rowling</div></a>
+
+    <nav class=" flex flex-row justify-content-space-around align-items-center">
+       <a href="/user-login" class="{{Request::is('/user-login')?'current':''}} text-link">Login</a>
+    </nav>
+
+
+</div>
+
 <section class="landing-banner">
     <div class="landing-banner__container flex flex-column align-items-center justify-content-space-between">
         <div class="landing-banner__profile flex flex-column align-items-center">
@@ -49,4 +79,10 @@
         </div>
     </div>
 </section>
-@endsection
+
+<div class="footer flex flex-row justify-content-space-between">
+    <div class="copyright"> © All Rights Reserved by Author | 2022
+</div>
+
+</body>
+</html>

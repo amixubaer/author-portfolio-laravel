@@ -33,4 +33,9 @@ class ProjectController extends Controller
         $projects = Project::take(3)->get();
         return view('landing.index', compact('projects'));
     }
+
+    public function home(){
+        $projects = Project::take(3)->get();
+        return view('home', compact('projects'));
+    }
 }

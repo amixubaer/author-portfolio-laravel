@@ -16,7 +16,7 @@
 
             @forelse ($projects as $project)
                 <a href="{{route('books.show',['id'=>$project->id])}}">
-                    <div class="card-flat card">
+                    <div class="project__container flex flex-column align-items-stretch justify-content-space-around card card-flat">
                         @if ($project->image_url)
                         <img src="{{$project->image_url}}" class="cool-box-shadow" />
                         @else
@@ -25,7 +25,7 @@
 
                         <div class="card-flat__content">
                             <h3>{{$project->title}}</h3>
-                            <div>Published at: <span style="color:crimson;font-family:cursive;">{{$project->publish}} </span> </div>
+                            <div> <span class="pub">Published at: </span><span style="color:crimson;font-family:cursive;">{{$project->publish}} </span> </div>
                         </div>
                     </div>
                 </a>

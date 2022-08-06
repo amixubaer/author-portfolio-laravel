@@ -11,7 +11,6 @@
         </div>
 
         <div class="projects__cards-flat">
-            <div class="cards-flat__container">
 
             @forelse ($blogs as $blog)
                 <a href="{{route('blogs.show',['id'=>$blog->id])}}">
@@ -27,7 +26,6 @@
                 @empty
                 <div>No Blog Found</div>
                 @endforelse
-            </div>
         </div>
 
 

@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [ProjectController::class, 'landing']);
+Route::get('/', [ProjectController::class, 'home']);
+
+Route::get('/home', [ProjectController::class, 'landing']);
 
 Route::get('/books/index',[ProjectController::class, 'index'])->name('books.index');
 

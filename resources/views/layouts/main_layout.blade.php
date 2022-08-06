@@ -25,7 +25,7 @@
     <a href="/"><div class="logo">J.K. Rowling</div></a>
 
     <nav class=" flex flex-row justify-content-space-around align-items-center">
-        <a href="/" class="{{Request::is('/')?'current':''}} text-link">Home</a>
+        <a href="/home" class="{{Request::is('/home')?'current':''}} text-link">Home</a>
         <a href="/books/index" class="{{Request::is('books/index')?'current-page':''}} text-link">Books</a>
        <a href='/blogs/index' class="{{Request::is('/blogs/index')?'current-':''}} text-link">Blogs</a>
        <a href="/logout" class="{{Request::is('/logout')?'current':''}} text-link">Logout</a>

@@ -75,7 +75,7 @@ class UserController extends Controller {
 
         // check user using auth function
         if (Auth::attempt($userCredentials)) {
-            return redirect()->intended('/');
+            return redirect()->intended('/home');
         }
 
         else {
@@ -90,6 +90,6 @@ class UserController extends Controller {
 public function logout(Request $request ) {
     $request->session()->flush();
     Auth::logout();
-    return Redirect('user-login');
+    return Redirect('/');
     }
 }

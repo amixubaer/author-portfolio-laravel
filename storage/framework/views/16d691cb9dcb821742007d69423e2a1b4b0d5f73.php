@@ -14,7 +14,7 @@
 
             <?php $__empty_1 = true; $__currentLoopData = $projects; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                 <a href="<?php echo e(route('books.show',['id'=>$project->id])); ?>">
-                    <div class="card-flat card">
+                    <div class="project__container flex flex-column align-items-stretch justify-content-space-around card card-flat">
                         <?php if($project->image_url): ?>
                         <img src="<?php echo e($project->image_url); ?>" class="cool-box-shadow" />
                         <?php else: ?>
@@ -23,7 +23,7 @@
 
                         <div class="card-flat__content">
                             <h3><?php echo e($project->title); ?></h3>
-                            <div>Published at: <span style="color:crimson;font-family:cursive;"><?php echo e($project->publish); ?> </span> </div>
+                            <div> <span class="pub">Published at: </span><span style="color:crimson;font-family:cursive;"><?php echo e($project->publish); ?> </span> </div>
                         </div>
                     </div>
                 </a>

@@ -9,7 +9,6 @@
         </div>
 
         <div class="projects__cards-flat">
-            <div class="cards-flat__container">
 
             <?php $__empty_1 = true; $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                 <a href="<?php echo e(route('blogs.show',['id'=>$blog->id])); ?>">
@@ -25,7 +24,6 @@
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                 <div>No Blog Found</div>
                 <?php endif; ?>
-            </div>
         </div>
 
 
